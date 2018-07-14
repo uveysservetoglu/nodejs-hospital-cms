@@ -8,4 +8,6 @@ module.exports = () => {
     mongose.connection.on('error', (err)=>{
         console.log("Veri Tabanı Bağlantı Hatas: ", err);
     });
+
+    mongose.Promise = global.Promise;
 };

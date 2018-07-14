@@ -4,11 +4,11 @@ const Schema  = mongoose.Schema;
 
 const model = {
     settings   : { required : false, type : JSON},
-    key        : { required : false},
-    parent     : Schema.Types.ObjectId,
-    post       : Schema.Types.ObjectId,
-    items      : Schema.Types.ObjectId,
-    department : Schema.Types.ObjectId,
+    key        : { required : false, type : String},
+    parent_id  : Schema.Types.ObjectId,
+    post_id    : Schema.Types.ObjectId,
+    items_id      : Schema.Types.ObjectId,
+    department_id : Schema.Types.ObjectId,
 };
 
 const modelSchema = new  Schema(model);
