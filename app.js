@@ -35,6 +35,7 @@ app.use('/users', usersRouter);
 app.use('/blog', blogRouter);
 app.use('/blog-post', blogPostRouter);
 app.use('/contracted-institution', contractedInstitutionRouter);
+app.use('/department', departmentRouter);
 app.use('/hospital', hospitalRouter);
 app.use('/language', language);
 app.use('/media', media);

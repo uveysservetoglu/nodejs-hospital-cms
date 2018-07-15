@@ -4,7 +4,7 @@ const Schema  = mongoose.Schema;
 
 const model = {
     settings   : { required : false, type : JSON},
-    key        : { required : false, type : String},
+    key        : { required : [false, '{PATH} alanı giriniz!'], type : String, maxLength : 80, minLength : 150 },
     parent_id  : Schema.Types.ObjectId,
     post_id    : Schema.Types.ObjectId,
     items_id      : Schema.Types.ObjectId,
